@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colección Hombre — Solimar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="coleccion.css" />
+</head>
+<body>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrapper">
+    <div class="marquee-content">
+      <span><span class="marquee-item">CÓMODAS</span> • <span class="marquee-item">LIVIANAS</span> • <span class="marquee-item">DURADERAS</span> • <span class="marquee-item">CON ESTILO</span> •</span>
+      <span><span class="marquee-item">CÓMODAS</span> • <span class="marquee-item">LIVIANAS</span> • <span class="marquee-item">DURADERAS</span> • <span class="marquee-item">CON ESTILO</span> •</span>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a href="index.html"><img src="solimar-logo-red.png" alt="Solimar" class="header-logo"></a>
+    <nav class="header-nav">
+      <a href="mujer.html">Mujer</a>
+      <a href="hombre.html" style="color: #C8102E;">Hombre</a>
+    </nav>
+    <a href="index.html#donde-comprar" class="btn-primary header-cta">Comprar Ahora</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="cat-hero">
+    <div class="cat-hero-bg" style="background-image: url('hero-hombre.jpg'); background-position: center 75%;"></div>
+    <div class="cat-hero-overlay"></div>
+    <div class="cat-hero-content">
+      <div class="breadcrumb"><a href="index.html">Inicio</a> / <span style="color: #fff;">Hombre</span></div>
+      <h1 class="cat-hero-title">Colección Hombre</h1>
+    </div>
+  </section>
+
+  <!-- FILTERS + GRID -->
+  <section class="cat-layout">
+    <!-- Sidebar -->
+    <aside>
+      <div class="filters-header">
+        <h2 class="filters-title">Filtros <span class="filters-count" id="active-count"></span></h2>
+        <button class="filters-clear" id="clear-filters" style="display:none;">LIMPIAR</button>
+      </div>
+      <div class="filter-section">
+        <div class="filter-title">Categoría</div>
+        <div id="filter-categoria"></div>
+      </div>
+      <div class="filter-section">
+        <div class="filter-title">Color</div>
+        <div id="filter-color"></div>
+      </div>
+      <div class="filter-section">
+        <div class="filter-title">Talla</div>
+        <div class="talla-pills" id="filter-talla"></div>
+      </div>
+      <div class="filter-section">
+        <div class="filter-title">Precio máximo</div>
+        <input type="range" class="price-range" id="price-range" min="50000" max="150000" step="5000" value="150000" />
+        <div class="price-label" id="price-label">Hasta $150.000</div>
+      </div>
+    </aside>
+
+    <!-- Products -->
+    <div>
+      <div class="toolbar">
+        <div class="toolbar-count">Mostrando <strong id="product-count">0</strong> de <span id="product-total">0</span> productos</div>
+        <div class="toolbar-sort">
+          <span class="toolbar-sort-label">ORDENAR POR:</span>
+          <select id="sort-select">
+            <option value="destacados">Destacados</option>
+            <option value="nuevos">Nuevos primero</option>
+            <option value="menor-precio">Menor precio</option>
+            <option value="mayor-precio">Mayor precio</option>
+          </select>
+        </div>
+      </div>
+      <div class="products-grid-col" id="products-grid"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-minimal">
+    <img src="solimar-logo-red.png" alt="Solimar" class="footer-minimal-brand">
+    <div class="footer-minimal-copy">&copy; 2026 Stanton S.A.S. Todos los derechos reservados.</div>
+  </footer>
+
+  <script>
+    var PAGE_DATA = {
+      productos: [
+        { id: "uz2552neg", name: "Sandalia UZ2552 Negro", price: 52900, badge: null, img: "UZ2552-NEG-main.jpg", colores: [{nombre:"Negro",thumb:"UZ2552-NEG-swatch.jpg"},{nombre:"Caramelo",thumb:"UZ2552-CAR-swatch.jpg"},{nombre:"Gris",thumb:"UZ2552-GRI-swatch.jpg"}], categoria: "Casual", color: "Negro", talla: ["S","M","L","XL","XXL"] },
+        { id: "uz2552car", name: "Sandalia UZ2552 Caramelo", price: 52900, badge: null, img: "UZ2552-CAR-main.jpg", colores: [{nombre:"Caramelo",thumb:"UZ2552-CAR-swatch.jpg"},{nombre:"Negro",thumb:"UZ2552-NEG-swatch.jpg"},{nombre:"Gris",thumb:"UZ2552-GRI-swatch.jpg"}], categoria: "Casual", color: "Caramelo", talla: ["S","M","L","XL","XXL"] },
+        { id: "uz2552gri", name: "Sandalia UZ2552 Gris", price: 52900, badge: null, img: "UZ2552-GRI-main.jpg", colores: [{nombre:"Gris",thumb:"UZ2552-GRI-swatch.jpg"},{nombre:"Negro",thumb:"UZ2552-NEG-swatch.jpg"},{nombre:"Caramelo",thumb:"UZ2552-CAR-swatch.jpg"}], categoria: "Casual", color: "Gris", talla: ["S","M","L","XL","XXL"] },
+        { id: "uz2568caf", name: "Sandalia UZ2568 Café", price: 52900, badge: null, img: "UZ2568-CAF-main.jpg", colores: [{nombre:"Café",thumb:"UZ2568-CAF-swatch.jpg"},{nombre:"Gris Negro",thumb:"UZ2568-GNE-swatch.jpg"}], categoria: "Casual", color: "Café", talla: ["S","M","L","XL","XXL"] },
+        { id: "uz2568gne", name: "Sandalia UZ2568 Gris Negro", price: 52900, badge: null, img: "UZ2568-GNE-main.jpg", colores: [{nombre:"Gris Negro",thumb:"UZ2568-GNE-swatch.jpg"},{nombre:"Café",thumb:"UZ2568-CAF-swatch.jpg"}], categoria: "Casual", color: "Gris", talla: ["S","M","L","XL","XXL"] },
+        { id: "726azu", name: "Sandalia 726 Azul (Unisex)", price: 42900, badge: "UNISEX", img: "726-AZU-main.jpg", colores: [{nombre:"Azul",thumb:"726-AZU-swatch.jpg"},{nombre:"Rojo",thumb:"726-ROJ-swatch.jpg"}], categoria: "Casual", color: "Azul", talla: ["S","M","L","XL","XXL"] },
+        { id: "726roj", name: "Sandalia 726 Rojo (Unisex)", price: 42900, badge: "UNISEX", img: "726-ROJ-main.jpg", colores: [{nombre:"Rojo",thumb:"726-ROJ-swatch.jpg"},{nombre:"Azul",thumb:"726-AZU-swatch.jpg"}], categoria: "Casual", color: "Rojo", talla: ["S","M","L","XL","XXL"] }
+      ]
+    };
+  </script>
+  <script src="coleccion.js"></script>
+  <script src="responsive.js"></script>
+</body>
+</html>

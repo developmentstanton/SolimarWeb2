@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Producto — Solimar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="producto.css" />
+</head>
+<body>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrapper">
+    <div class="marquee-content">
+      <span><span class="marquee-item">CÓMODAS</span> • <span class="marquee-item">LIVIANAS</span> • <span class="marquee-item">DURADERAS</span> • <span class="marquee-item">CON ESTILO</span> •</span>
+      <span><span class="marquee-item">CÓMODAS</span> • <span class="marquee-item">LIVIANAS</span> • <span class="marquee-item">DURADERAS</span> • <span class="marquee-item">CON ESTILO</span> •</span>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header" style="padding-left:60px;padding-right:60px;">
+    <a href="index.html"><img src="solimar-logo-red.png" alt="Solimar" class="header-logo"></a>
+    <nav class="header-nav">
+      <a href="mujer.html">Mujer</a>
+      <a href="hombre.html">Hombre</a>
+    </nav>
+    <a href="index.html#donde-comprar" class="btn-primary header-cta">Comprar Ahora</a>
+  </header>
+
+  <!-- BREADCRUMB (filled by JS) -->
+  <div class="breadcrumb-product" id="breadcrumb"></div>
+
+  <!-- MAIN LAYOUT -->
+  <section class="producto-layout">
+    <div class="galeria-wrap">
+      <div class="galeria" id="galeria"></div>
+      <button type="button" class="galeria-nav galeria-nav--prev" id="gal-prev" aria-label="Imagen anterior">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button type="button" class="galeria-nav galeria-nav--next" id="gal-next" aria-label="Imagen siguiente">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+    <div class="info-sticky" id="info-panel"></div>
+  </section>
+
+  <!-- DETALLES -->
+  <section class="detalles-section">
+    <div class="detalles-grid">
+      <div>
+        <div class="section-tag" style="margin-bottom:14px;">Detalles del producto</div>
+        <h2 style="font-family:'Poppins',sans-serif;font-size:32px;font-weight:500;color:var(--dark);margin:0 0 24px;line-height:1.2;">Diseñada con propósito</h2>
+        <p style="font-size:14px;color:var(--text-muted);line-height:1.8;">Cada par de Solimar combina décadas de experiencia en manufactura colombiana con innovación en materiales y un compromiso inquebrantable con el confort del usuario.</p>
+      </div>
+      <div id="detalles-list"></div>
+    </div>
+  </section>
+
+  <!-- RELACIONADOS -->
+  <section class="relacionados-section">
+    <div class="relacionados-header">
+      <div class="section-tag" style="margin-bottom:10px;">También te puede gustar</div>
+      <h2 style="font-family:'Poppins',sans-serif;font-size:32px;font-weight:500;color:var(--dark);margin:0;">Otros estilos de la colección</h2>
+    </div>
+    <div class="relacionados-grid" id="relacionados-grid"></div>
+  </section>
+
+  <!-- SIZE GUIDE MODAL -->
+  <div class="size-modal" id="size-modal" hidden>
+    <div class="size-modal-backdrop" data-close></div>
+    <div class="size-modal-card" role="dialog" aria-modal="true" aria-labelledby="size-modal-title">
+      <button type="button" class="size-modal-close" data-close aria-label="Cerrar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <h3 id="size-modal-title" class="size-modal-title">Guía de tallas</h3>
+      <p class="size-modal-intro">Toma la medida de la longitud de tus pies en centímetros, desde el talón hasta el dedo más largo y encuentra tu medida en la tabla.</p>
+      <div class="size-modal-tables">
+        <div class="size-table-wrap">
+          <div class="size-table-heading">Hombre</div>
+          <table class="size-table">
+            <thead><tr><th>Milímetros</th><th>Colombia</th><th>US</th><th>EUR</th></tr></thead>
+            <tbody>
+              <tr><td>248 – 254</td><td>S</td><td>5½</td><td>38</td></tr>
+              <tr><td>255 – 260</td><td>M</td><td>6</td><td>39</td></tr>
+              <tr><td>261 – 267</td><td>L</td><td>7</td><td>40</td></tr>
+              <tr><td>268 – 274</td><td>XL</td><td>7½</td><td>41</td></tr>
+              <tr><td>275 – 280</td><td>XXL</td><td>8½</td><td>42</td></tr>
+              <tr><td>281 – 287</td><td>XXXL</td><td>9</td><td>43</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="size-table-wrap">
+          <div class="size-table-heading">Mujer</div>
+          <table class="size-table">
+            <thead><tr><th>Milímetros</th><th>Colombia</th><th>US</th><th>EUR</th></tr></thead>
+            <tbody>
+              <tr><td>221 – 227</td><td>XS</td><td>3</td><td>34</td></tr>
+              <tr><td>228 – 234</td><td>S</td><td>4</td><td>35</td></tr>
+              <tr><td>235 – 240</td><td>M</td><td>4½</td><td>36</td></tr>
+              <tr><td>241 – 247</td><td>L</td><td>5½</td><td>37</td></tr>
+              <tr><td>248 – 254</td><td>XL</td><td>6½</td><td>38</td></tr>
+              <tr><td>255 – 260</td><td>XXL</td><td>7</td><td>39</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-minimal">
+    <img src="solimar-logo-red.png" alt="Solimar" class="footer-minimal-brand">
+    <div class="footer-minimal-copy">&copy; 2026 Stanton S.A.S. Todos los derechos reservados.</div>
+  </footer>
+
+  <script src="productos-data.js"></script>
+  <script src="producto.js"></script>
+  <script src="responsive.js"></script>
+</body>
+</html>
