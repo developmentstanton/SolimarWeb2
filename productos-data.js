@@ -307,42 +307,6 @@ var PRODUCTOS_DB = {
     ],
     relacionados: ["oi2603fuc","957bazu","957bros","957pnav"]
   },
-  "957ngri": {
-    nombre: "Sandalia 957N Gris",
-    categoria: "Mujer / Plana",
-    genero: "mujer",
-    precio: 51900,
-    badge: null,
-    descripcion: "Sandalia mujer con plantilla gris y tira con estampado de palmeras en tonos blanco y negro. Diseño sofisticado y versátil que combina con todo — perfecta para el día a día o la playa con el confort característico de Solimar.",
-    detalles: [
-      "Plantilla EVA ergonómica en tono gris",
-      "Tira de tela con estampado de palmeras en blanco y negro",
-      "Suela antideslizante con textura de ondas",
-      "Diseño versátil de acabado mate",
-      "Fabricado en Bucaramanga, Colombia"
-    ],
-    colores: [
-      { nombre: "Gris", hex: "#7A7A7A", thumb: "957N-GRI-swatch.jpg" }
-    ],
-    tallas: ["XS","S","M","L","XL"],
-    galeria: [
-      "957N-GRI-hero.jpg",
-      "957N-GRI-01.jpg",
-      "957N-GRI-02.jpg",
-      "957N-GRI-lifestyle.jpg",
-      "957N-GRI-03.jpg",
-      "957N-GRI-04.jpg",
-      "957N-GRI-05.jpg",
-      "957N-GRI-06.jpg"
-    ],
-    tiendas: [
-      { name: "Tiendas AKA", logo: "logo-aka.png", link: "#", featured: true, agotado: true },
-      { name: "Dafiti", logo: "logo-dafiti.png", link: "#", featured: false, agotado: true },
-      { name: "Mercado Libre", logo: "logo-mercadolibre.png", link: "#", featured: false, agotado: true },
-      { name: "Éxito", logo: "logo-exito.png", link: "#", featured: false, agotado: true }
-    ],
-    relacionados: ["957bpla","957bros","957bazu","957pnav"]
-  },
   /* ========== HOMBRE ========== */
   "726azu": {
     nombre: "Sandalia 726 Azul",
