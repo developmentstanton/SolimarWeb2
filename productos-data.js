@@ -13,7 +13,7 @@ var PRODUCTOS_DB = {
       "Suela antideslizante con textura superficial",
       "Tira de tela tejida con rayas en tonos azules",
       "Acabado mate en tono navy profundo",
-      "Fabricado en Bucaramanga, Colombia"
+      "Fabricado en Colombia"
     ],
     colores: [
       { nombre: "Navy", hex: "#1B365D", thumb: "957P-NAV-swatch.jpg" },
@@ -50,7 +50,7 @@ var PRODUCTOS_DB = {
       "Suela con estampado exclusivo en tonos grises y lilas",
       "Tira de PU negro con acabado mate",
       "Diseño versátil para uso diario",
-      "Fabricado en Bucaramanga, Colombia"
+      "Fabricado en Colombia"
     ],
     colores: [
       { nombre: "Negro", hex: "#000000", thumb: "957P-NEG-swatch.jpg" },
@@ -87,7 +87,7 @@ var PRODUCTOS_DB = {
       "Suela antideslizante en negro mate",
       "Tira de tela con estampado de palmeras en tono plata",
       "Diseño minimalista con acento exclusivo Solimar",
-      "Fabricado en Bucaramanga, Colombia"
+      "Fabricado en Colombia"
     ],
     colores: [
       { nombre: "Plata", hex: "#B8B8B8", thumb: "957B-PLA-swatch.jpg" },
@@ -126,7 +126,7 @@ var PRODUCTOS_DB = {
       "Suela antideslizante en negro mate",
       "Tira de tela rosa con estampado de palmeras en blanco",
       "Diseño juvenil y versátil",
-      "Fabricado en Bucaramanga, Colombia"
+      "Fabricado en Colombia"
     ],
     colores: [
       { nombre: "Rosa", hex: "#FFB6C1", thumb: "957B-ROS-swatch.jpg" },
@@ -165,7 +165,7 @@ var PRODUCTOS_DB = {
       "Suela antideslizante en negro mate",
       "Tira de tela azul cielo con estampado de palmeras en blanco",
       "Diseño ligero ideal para clima cálido",
-      "Fabricado en Bucaramanga, Colombia"
+      "Fabricado en Colombia"
     ],
     colores: [
       { nombre: "Azul", hex: "#5BA9E0", thumb: "957B-AZU-swatch.jpg" },
@@ -204,7 +204,7 @@ var PRODUCTOS_DB = {
       "Suela antideslizante en negro mate",
       "Tira de tela negra con estampado de palmeras en fucsia",
       "Diseño versátil con acento de color",
-      "Fabricado en Bucaramanga, Colombia"
+      "Fabricado en Colombia"
     ],
     colores: [
       { nombre: "Fucsia", hex: "#E91E63", thumb: "957B-FUC-swatch.jpg" },
@@ -244,7 +244,7 @@ var PRODUCTOS_DB = {
       "Tira blanca lisa de PVC suave",
       "Suela antideslizante en tono fucsia",
       "Diseño ligero ideal para clima cálido",
-      "Fabricado en Bucaramanga, Colombia"
+      "Fabricado en Colombia"
     ],
     colores: [
       { nombre: "Fucsia", hex: "#E91E63", thumb: "OI2603-FUC-swatch.jpg" },
@@ -282,7 +282,7 @@ var PRODUCTOS_DB = {
       "Tira turquesa lisa de PVC suave",
       "Suela antideslizante en tono turquesa",
       "Diseño ligero ideal para clima cálido",
-      "Fabricado en Bucaramanga, Colombia"
+      "Fabricado en Colombia"
     ],
     colores: [
       { nombre: "Azul", hex: "#4ECDC4", thumb: "OI2603-AZU-swatch.jpg" },
@@ -320,7 +320,7 @@ var PRODUCTOS_DB = {
       "Tira de tela con estampado de palmeras en blanco y negro",
       "Suela antideslizante con textura de ondas",
       "Diseño versátil de acabado mate",
-      "Fabricado en Bucaramanga, Colombia"
+      "Fabricado en Colombia"
     ],
     colores: [
       { nombre: "Gris", hex: "#7A7A7A", thumb: "957N-GRI-swatch.jpg" }
@@ -357,7 +357,7 @@ var PRODUCTOS_DB = {
       "Tira de tela color azul marino",
       "Suela ergonómica con ribete azul claro de contraste",
       "Plantilla con logo Solimar en relieve",
-      "Fabricado en Bucaramanga, Colombia"
+      "Fabricado en Colombia"
     ],
     colores: [
       { nombre: "Azul", hex: "#1E3A5F", thumb: "726-AZU-swatch.jpg" },
@@ -394,7 +394,7 @@ var PRODUCTOS_DB = {
       "Tira de tela color rojo vibrante",
       "Suela ergonómica con ribete tricolor rojo, amarillo y negro",
       "Plantilla con logo Solimar en relieve",
-      "Fabricado en Bucaramanga, Colombia"
+      "Fabricado en Colombia"
     ],
     colores: [
       { nombre: "Rojo", hex: "#C8102E", thumb: "726-ROJ-swatch.jpg" },
@@ -431,7 +431,7 @@ var PRODUCTOS_DB = {
       "Plantilla EVA ergonómica de alta densidad",
       "Suela antideslizante con ribete blanco de contraste",
       "Logo Solimar en etiqueta de silicona",
-      "Fabricado en Bucaramanga, Colombia"
+      "Fabricado en Colombia"
     ],
     colores: [
       { nombre: "Negro", hex: "#000000", thumb: "UZ2552-NEG-swatch.jpg" },
@@ -469,7 +469,7 @@ var PRODUCTOS_DB = {
       "Plantilla EVA ergonómica de alta densidad",
       "Suela antideslizante en tono caramelo",
       "Logo Solimar en etiqueta de silicona",
-      "Fabricado en Bucaramanga, Colombia"
+      "Fabricado en Colombia"
     ],
     colores: [
       { nombre: "Caramelo", hex: "#A67C52", thumb: "UZ2552-CAR-swatch.jpg" },
@@ -507,7 +507,7 @@ var PRODUCTOS_DB = {
       "Plantilla EVA ergonómica de alta densidad",
       "Suela antideslizante con ribete naranja de contraste",
       "Logo Solimar en etiqueta de silicona",
-      "Fabricado en Bucaramanga, Colombia"
+      "Fabricado en Colombia"
     ],
     colores: [
       { nombre: "Gris", hex: "#5A5A5A", thumb: "UZ2552-GRI-swatch.jpg" },
@@ -545,7 +545,7 @@ var PRODUCTOS_DB = {
       "Plantilla con estampado botánico exclusivo Solimar",
       "Suela ergonómica en tono café natural",
       "Etiqueta de cuero sintético con logo Solimar",
-      "Fabricado en Bucaramanga, Colombia"
+      "Fabricado en Colombia"
     ],
     colores: [
       { nombre: "Café", hex: "#6F4E37", thumb: "UZ2568-CAF-swatch.jpg" },
@@ -582,7 +582,7 @@ var PRODUCTOS_DB = {
       "Plantilla con textura de puntos antideslizante",
       "Suela ergonómica en gris oscuro con acabado mate",
       "Etiqueta de silicona con logo Solimar",
-      "Fabricado en Bucaramanga, Colombia"
+      "Fabricado en Colombia"
     ],
     colores: [
       { nombre: "Gris Negro", hex: "#3A3A3A", thumb: "UZ2568-GNE-swatch.jpg" },
