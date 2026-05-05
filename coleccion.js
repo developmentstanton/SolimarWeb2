@@ -45,6 +45,7 @@
   });
 
   function buildCheckboxes(container, items, filtro, setFiltro) {
+    if (!container) return;
     container.innerHTML = '';
     items.forEach(function (item) {
       var label = document.createElement('label');
@@ -60,6 +61,7 @@
   }
 
   function buildTallas() {
+    if (!tallaContainer) return;
     tallaContainer.innerHTML = '';
     tallas.forEach(function (t) {
       var span = document.createElement('span');

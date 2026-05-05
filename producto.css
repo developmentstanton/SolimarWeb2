@@ -247,12 +247,11 @@
 .color-thumb.active { border-color: var(--dark); }
 .color-thumb:hover { border-color: var(--text-muted); }
 
-/* Talla pills (override coleccion if needed) */
-.producto-tallas .talla-pill {
-  padding: 12px 0;
-  width: 52px;
-  text-align: center;
-  margin: 0 8px 8px 0;
+/* Tallas — texto disponible (no seleccionable, sitio no transaccional) */
+.producto-tallas .tallas-disponibles {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin: 8px 0 14px;
 }
 
 /* Store buttons */

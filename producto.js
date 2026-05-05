@@ -8,7 +8,7 @@
   var id = params.get('id') || window.location.hash.replace('#', '');
   var p = PRODUCTOS_DB[id];
 
-  if (!p) {
+  if (!p || p.oculto) {
     document.getElementById('info-panel').innerHTML = '<h2>Producto no encontrado</h2><p><a href="index.html">Volver al inicio</a></p>';
     return;
   }
@@ -83,20 +83,14 @@
       return '<span class="color-thumb' + (i === colorIdx ? ' active' : '') + '" data-ci="' + i + '" title="' + c.nombre + '"><img src="' + c.thumb + '" alt="' + c.nombre + '" /></span>';
     }).join('');
 
-    var tallasHtml = p.tallas.map(function (t) {
-      return '<span class="talla-pill' + (tallaSel === t ? ' active' : '') + '" data-t="' + t + '">' + t + '</span>';
-    }).join('');
+    var tallasTexto = p.genero === 'hombre'
+      ? 'Disponibles desde la talla S a XXL'
+      : 'Disponibles desde la talla XS a XL';
 
     // Use product-specific tiendas if defined, else fall back to global STORES
-    var tiendas = p.tiendas || STORES;
+    // Hide marketplaces marked as agotado entirely instead of showing disabled buttons
+    var tiendas = (p.tiendas || STORES).filter(function (s) { return !s.agotado; });
     var storesHtml = tiendas.map(function (s) {
-      if (s.agotado) {
-        return '<div class="store-btn agotado" aria-disabled="true">'
-          + '<img src="' + s.logo + '" alt="' + s.name + '" onerror="this.style.display=\'none\'" />'
-          + '<span>' + s.name + '</span>'
-          + '<span class="stock-badge">Sin stock</span>'
-          + '</div>';
-      }
       var descuentoBadge = s.descuento ? '<span class="stock-badge" style="background:#C8102E;color:#fff;">OFERTA</span>' : '';
       return '<a href="' + s.link + '" target="_blank" rel="noopener noreferrer" class="store-btn' + (s.featured ? ' featured' : '') + '">'
         + '<img src="' + s.logo + '" alt="' + s.name + '" onerror="this.style.display=\'none\'" />'
@@ -119,8 +113,8 @@
       +   '<div>' + colorsHtml + '</div>'
       + '</div>'
       + '<div class="info-block info-block--talla producto-tallas" style="margin-bottom:32px;">'
-      +   '<div class="section-label">Talla' + (tallaSel ? ': <span>' + tallaSel + '</span>' : '') + '</div>'
-      +   '<div>' + tallasHtml + '</div>'
+      +   '<div class="section-label">Tallas</div>'
+      +   '<div class="tallas-disponibles">' + tallasTexto + '</div>'
       +   '<a href="#" class="size-guide-link" id="size-guide-link">Guía de tallas</a>'
       + '</div>'
       + '<div class="info-block info-block--stores stores-section">'

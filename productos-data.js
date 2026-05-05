@@ -308,6 +308,7 @@ var PRODUCTOS_DB = {
     relacionados: ["oi2603fuc","957bazu","957bros","957pnav"]
   },
   "957ngri": {
+    oculto: true,
     nombre: "Sandalia 957N Gris",
     categoria: "Mujer / Plana",
     genero: "mujer",
